@@ -1,0 +1,13 @@
+# *
+User-agent: *
+Disallow: /private/
+
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://parcelasanantonioencina.github.io/
+
+# Sitemaps
+Sitemap: https://parcelasanantonioencina.github.io/sitemap.xml
