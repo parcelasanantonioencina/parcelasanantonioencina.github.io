@@ -13,14 +13,80 @@ interface Parcel {
 }
 
 // Sample parcel data - 20 parcels arranged in a grid pattern
+const routes: Parcel[] = [
+  {
+    id: 1,
+    coordinates: [
+      [-35.85727324293104, -71.51286936391655],//arriba a la izquerda
+      [-35.85731637556925, -71.51290253306843],//abajo a la izquerda
+      [-35.85789838250663, -71.5117760830486],// camino 1 y 2 abajo
+      [-35.85817054072816, -71.51124208764571],// camino 2 y 3 abajo
+      [-35.85844849486535, -71.51079486410683],// camino 3 y 4 abajo
+      [-35.85872790608368, -71.51040355109336],// camino 4 y 5 abajo
+      [-35.85897805458731, -71.51005857407318],// camino 5 y 6 abajo
+      [-35.85919308306823, -71.50971766989667],// camino 6 y 7 abajo
+      [-35.85938317627553, -71.50938568032768],// camino 13 1
+      [-35.85961089408031, -71.50895683085159],// camino 13 2
+      [-35.8598060290275, -71.50861606338172],// camino 13 3
+      [-35.85995026305982, -71.50837205414196],// camino 13 4
+      [-35.86009819331159, -71.50819942102827],// camino 13 5
+      [-35.86019555792676, -71.50805011826836],// camino 13 6
+      [-35.86026014620448, -71.50789969002818],// camino 13 7
+      [-35.86037192398312, -71.50763237394878],// camino 13 8
+
+      [-35.86047703791841, -71.50735334529919],// camino 16 1
+      [-35.86055383563401, -71.50716866873429],// camino 16 2
+      [-35.86055227004766, -71.5070031327329],// camino 16 3
+      [-35.86056036723849, -71.5068618649932],// camino 16 4
+
+      [-35.86050704537475, -71.50684723163381],//abajo a la derecha 16
+      [-35.86050247402304, -71.50714494065102],//abajo medio 16
+      [-35.86034665528052, -71.50753456087693],//abajo a la izquerda 16
+      [-35.85979092789832, -71.50718491235121],//arriba a la izquerda 2
+      [-35.85962842721126, -71.50673578555191],//arriba a la izquerda 1
+
+      [-35.85958707619893, -71.50678468997084],//arriba a la derecha 14
+      [-35.8597556406512, -71.50724329602212],//abajo a la derecha 14
+
+      [-35.86031869491195, -71.50760106796203],//abajo a la derecha 13
+      [-35.85936939546911, -71.50929718523504],//abajo a la izquerda 13
+      [-35.85881747285672, -71.50891624469267],//arriba a la izquerda 13
+
+      [-35.85838783959056, -71.50861187725251],//arriba a la izquerda 12
+
+      [-35.85803913016363, -71.50837301768095],//arriba a la izquerda 11
+
+      [-35.85799320620986, -71.50834405750857], //abajo a la derecha 9
+
+      [-35.85796161671362, -71.50840432704966],//arriba a la derecha 8
+      [-35.85826475233866, -71.50860546745668],//abajo a la derecha 8
+
+      [-35.85933309773954, -71.50935205672074],//abajo a la derecha 7
+      [-35.85913879006977, -71.50969542015399],//abajo a la izqyuierda 7
+
+      [-35.85892156062695, -71.51002636825424],//6
+
+      [-35.85867792497364, -71.51037102668637],//5
+
+      [-35.8583964866807, -71.51076342663893],//4
+
+      [-35.8581218941265, -71.51121304881421],// camino 2 y 3 arriba
+      [-35.85784439605958, -71.51174950218515],// camino 1 y 2 arriba(final)
+    ],
+    status: "available",
+    surface: "Camino interior",
+  },
+]
+
+// Sample parcel data - 20 parcels arranged in a grid pattern
 const parcels: Parcel[] = [
   {
     id: 1,
     coordinates: [
-      [-35.85727324293104, -71.51286936391655],
-      [-35.8570768001407, -71.51269079112001],
-      [-35.85724584130358, -71.51140386302689],
-      [-35.85784439605958, -71.51174950218515],
+      [-35.85727324293104, -71.51286936391655],//abajo a la izquerda
+      [-35.8570768001407, -71.51269079112001],//abajo a la derecha
+      [-35.85724584130358, -71.51140386302689],//arriba a la derecha
+      [-35.85784439605958, -71.51174950218515],//arriba a la izquerda
     ],
     status: "available",
     surface: "5,000 m²",
@@ -34,8 +100,9 @@ const parcels: Parcel[] = [
       [-35.8581218941265, -71.51121304881421],
       [-35.85728338681388, -71.51073172075738],
     ],
-    status: "sold",
+    status: "available",
     surface: "5,000 m²",
+    price: "$45,000,000",
   },
   {
     id: 3,
@@ -128,13 +195,94 @@ const parcels: Parcel[] = [
       [-35.85725298368627, -71.50783361664081],
       [-35.85803913016363, -71.50837301768095],
       [-35.85829478858966, -71.50747470590824],
-      [-35.85825106326393, -71.50747976247723],
-      [-35.85820974801998, -71.50747973821403],
-      [-35.85815624507215, -71.5074691424182],
-      [-35.85808074592433, -71.50744782789604],
-      [-35.8580189984156, -71.50743162064366],
-      [-35.85795201913888, -71.50743037582524],
       [-35.85788108453173, -71.50745598012355],
+    ],
+    status: "available",
+    surface: "5,000 m²",
+    price: "$45,000,000",
+  },
+  {
+    id: 11,
+    coordinates: [
+      [-35.85803913016363, -71.50837301768095],//arriba a la izquerda
+      [-35.85838783959056, -71.50861187725251],//abajo a la izquerda
+      [-35.85884774436673, -71.50778726997927],//abajo a la derecha
+      [-35.85835184417942, -71.5074444039178],//arriba a la derecha 1
+      [-35.85829478858966, -71.50747470590824],//arriba a la derecha 2
+    ],
+    status: "available",
+    surface: "5,000 m²",
+    price: "$45,000,000",
+  },
+  {
+    id: 12,
+    coordinates: [
+      [-35.85838783959056, -71.50861187725251],//arriba a la izquerda
+      [-35.85881747285672, -71.50891624469267],//abajo a la izquerda
+      [-35.85927785390653, -71.508087747708],//abajo a la derecha
+      [-35.85884774436673, -71.50778726997927],//arriba a la derecha
+    ],
+    status: "available",
+    surface: "5,000 m²",
+    price: "$45,000,000",
+  },
+  {
+    id: 13,
+    coordinates: [
+      [-35.85881747285672, -71.50891624469267],//arriba a la izquerda
+      [-35.85936939546911, -71.50929718523504],//abajo a la izquerda
+      [-35.86031869491195, -71.50760106796203],//abajo a la derecha
+      [-35.8597556406512, -71.50724329602212],//arriba a la derecha
+    ],
+    status: "available",
+    surface: "10,000 m²",
+    price: "$90,000,000",
+  },
+  {
+    id: 14,
+    coordinates: [
+      [-35.85884774436673, -71.50778726997927],//arriba a la izquerda
+      [-35.85927785390653, -71.508087747708],//abajo a la izquerda
+      [-35.8597556406512, -71.50724329602212],//abajo a la derecha
+      [-35.85958707619893, -71.50678468997084],//arriba a la derecha
+    ],
+    status: "available",
+    surface: "5,000 m²",
+    price: "$45,000,000",
+  },
+  {
+    id: 15,
+    coordinates: [
+      [-35.85835184417942, -71.5074444039178],//arriba a la izquerda
+      [-35.85884774436673, -71.50778726997927],//abajo a la izquerda
+      [-35.85958707619893, -71.50678468997084],//abajo a la derecha medio
+      [-35.85962842721126, -71.50673578555191],//abajo a la derecha
+      [-35.85957152809942, -71.50658352909149],//arriba a la derecha
+    ],
+    status: "available",
+    surface: "5,000 m²",
+    price: "$45,000,000",
+  },
+  {
+    id: 16,
+    coordinates: [
+      [-35.85957152809942, -71.50658352909149],//arriba a la izquerda
+      [-35.85962842721126, -71.50673578555191],//arriba a la izquerda 1
+      [-35.85979092789832, -71.50718491235121],//arriba a la izquerda 2
+      [-35.86034665528052, -71.50753456087693],//abajo a la izquerda
+      [-35.86050247402304, -71.50714494065102],//abajo medio
+      [-35.86050704537475, -71.50684723163381],//abajo a la derecha
+    ],
+    status: "available",
+    surface: "5,000 m²",
+    price: "$45,000,000",
+  },
+  {
+    id: 17,
+    coordinates: [
+      [-35.85957152809942, -71.50658352909149],//arriba a la izquerda
+      [-35.86056036723849, -71.5068618649932],//abajo a la izquerda
+      [-35.86054228870971, -71.50527606618928],//derecha
     ],
     status: "available",
     surface: "5,000 m²",
@@ -220,6 +368,23 @@ export function ParcellationSection() {
 
       markersRef.current.push(marker)
     })
+
+    //route
+    routes.forEach((parcel) => {
+      const polygon = new window.google.maps.Polygon({
+        paths: parcel.coordinates.map((coord) => ({ lat: coord[0], lng: coord[1] })),
+        strokeColor: "#d8ce3fff",
+        strokeOpacity: 0.8,
+        strokeWeight: 2,
+        fillColor: "#d8ce3fff",
+        fillOpacity: 0.2,
+        map: mapInstance,
+      })
+
+      polygonsRef.current.push(polygon)
+
+    })
+    //route
   }, [])
 
   useEffect(() => {
@@ -285,6 +450,10 @@ export function ParcellationSection() {
             <div className="flex items-center gap-2">
               <div className="w-4 h-4 bg-red-500 rounded-full"></div>
               <span className="text-sm text-muted-foreground">Vendida</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <div className="w-4 h-4 bg-yellow-500 rounded-full"></div>
+              <span className="text-sm text-muted-foreground">Camino Interior</span>
             </div>
           </div>
 
