@@ -6,6 +6,7 @@ import { ContactSection } from "@/components/contact-section"
 import { Footer } from "@/components/footer"
 import { WhatsAppWidget } from "@/components/whatsapp-widget"
 import { Metadata } from "next"
+import { FeaturesSection } from "@/components/features-section"
 
 export const metadata: Metadata = {
   title: "Parcelas San Antonio Encina - Parcelas de 5000m2",
@@ -38,6 +39,7 @@ export default function Home() {
     <main className="min-h-screen">
       <Navigation />
       <HeroSection />
+      <FeaturesSection />
       <LocationSection />
       <ParcellationSection />
       <ContactSection />
