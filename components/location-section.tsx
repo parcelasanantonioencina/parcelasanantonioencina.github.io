@@ -116,7 +116,7 @@ export function LocationSection() {
                 </div>
                 <div className="flex items-center gap-2">
                   <div className="w-2 h-2 bg-primary rounded-full flex-shrink-0"></div>
-                  <span>10 minutos de Panimávida</span>
+                  <span>18 minutos de Panimávida</span>
                 </div>
               </div>
             </div>

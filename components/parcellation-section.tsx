@@ -89,8 +89,8 @@ const parcels: Parcel[] = [
       [-35.85784439605958, -71.51174950218515],//arriba a la izquerda
     ],
     status: "available",
-    surface: "5,000 m²",
-    price: "$45,000,000",
+    surface: "5.820 m²",
+    price: "$45.000.000",
   },
   {
     id: 2,
@@ -101,8 +101,8 @@ const parcels: Parcel[] = [
       [-35.85728338681388, -71.51073172075738],
     ],
     status: "available",
-    surface: "5,000 m²",
-    price: "$45,000,000",
+    surface: "5.000 m²",
+    price: "$45.000.000",
   },
   {
     id: 3,
@@ -114,8 +114,8 @@ const parcels: Parcel[] = [
       [-35.8583964866807, -71.51076342663893],
     ],
     status: "available",
-    surface: "5,000 m²",
-    price: "$45,000,000",
+    surface: "5.187 m²",
+    price: "$45.000.000",
   },
   {
     id: 4,
@@ -126,8 +126,8 @@ const parcels: Parcel[] = [
       [-35.85775686759441, -71.50973489100633],
     ],
     status: "available",
-    surface: "5,000 m²",
-    price: "$45,000,000",
+    surface: "5.140 m²",
+    price: "$45.000.000",
   },
   {
     id: 5,
@@ -138,8 +138,8 @@ const parcels: Parcel[] = [
       [-35.85892156062695, -71.51002636825424],
     ],
     status: "available",
-    surface: "5,000 m²",
-    price: "$45,000,000",
+    surface: "5.002 m²",
+    price: "$45.000.000",
   },
   {
     id: 6,
@@ -150,8 +150,8 @@ const parcels: Parcel[] = [
       [-35.8581084541583, -71.50896944942671],
     ],
     status: "available",
-    surface: "5,000 m²",
-    price: "$45,000,000",
+    surface: "5.001 m²",
+    price: "$45.000.000",
   },
   {
     id: 7,
@@ -162,8 +162,8 @@ const parcels: Parcel[] = [
       [-35.85933309773954, -71.50935205672074],
     ],
     status: "available",
-    surface: "5,000 m²",
-    price: "$45,000,000",
+    surface: "5.003 m²",
+    price: "$45.000.000",
   },
   {
     id: 8,
@@ -174,8 +174,8 @@ const parcels: Parcel[] = [
       [-35.85747778458842, -71.50947870517012],
     ],
     status: "available",
-    surface: "5,000 m²",
-    price: "$45,000,000",
+    surface: "5.319 m²",
+    price: "$45.000.000",
   },
   {
     id: 9,
@@ -186,8 +186,8 @@ const parcels: Parcel[] = [
       [-35.85799320620986, -71.50834405750857],
     ],
     status: "available",
-    surface: "5,000 m²",
-    price: "$45,000,000",
+    surface: "5.580 m²",
+    price: "$45.000.000",
   },
   {
     id: 10,
@@ -198,8 +198,8 @@ const parcels: Parcel[] = [
       [-35.85788108453173, -71.50745598012355],
     ],
     status: "available",
-    surface: "5,000 m²",
-    price: "$45,000,000",
+    surface: "5.095 m²",
+    price: "$45.000.000",
   },
   {
     id: 11,
@@ -211,8 +211,8 @@ const parcels: Parcel[] = [
       [-35.85829478858966, -71.50747470590824],//arriba a la derecha 2
     ],
     status: "available",
-    surface: "5,000 m²",
-    price: "$45,000,000",
+    surface: "5.010 m²",
+    price: "$45.000.000",
   },
   {
     id: 12,
@@ -223,8 +223,8 @@ const parcels: Parcel[] = [
       [-35.85884774436673, -71.50778726997927],//arriba a la derecha
     ],
     status: "available",
-    surface: "5,000 m²",
-    price: "$45,000,000",
+    surface: "5.000 m²",
+    price: "$45.000.000",
   },
   {
     id: 13,
@@ -235,8 +235,8 @@ const parcels: Parcel[] = [
       [-35.8597556406512, -71.50724329602212],//arriba a la derecha
     ],
     status: "available",
-    surface: "10,000 m²",
-    price: "$90,000,000",
+    surface: "13.217 m²",
+    price: "$100.000.000",
   },
   {
     id: 14,
@@ -247,8 +247,8 @@ const parcels: Parcel[] = [
       [-35.85958707619893, -71.50678468997084],//arriba a la derecha
     ],
     status: "available",
-    surface: "5,000 m²",
-    price: "$45,000,000",
+    surface: "5.122 m²",
+    price: "$45.000.000",
   },
   {
     id: 15,
@@ -260,8 +260,8 @@ const parcels: Parcel[] = [
       [-35.85957152809942, -71.50658352909149],//arriba a la derecha
     ],
     status: "available",
-    surface: "5,000 m²",
-    price: "$45,000,000",
+    surface: "5.095 m²",
+    price: "$45.000.000",
   },
   {
     id: 16,
@@ -274,8 +274,8 @@ const parcels: Parcel[] = [
       [-35.86050704537475, -71.50684723163381],//abajo a la derecha
     ],
     status: "available",
-    surface: "5,000 m²",
-    price: "$45,000,000",
+    surface: "5.004 m²",
+    price: "$45.000.000",
   },
   {
     id: 17,
@@ -285,8 +285,8 @@ const parcels: Parcel[] = [
       [-35.86054228870971, -71.50527606618928],//derecha
     ],
     status: "available",
-    surface: "5,000 m²",
-    price: "$45,000,000",
+    surface: "8.455 m²",
+    price: "$100.000.000",
   },
 ]
 
@@ -464,11 +464,11 @@ export function ParcellationSection() {
             </p>
           </div>
 
-          <div className="text-center">
+          {/* <div className="text-center">
             <Button onClick={downloadKMZ} className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3">
               DESCARGA EL KMZ (GOOGLE EARTH)
             </Button>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
