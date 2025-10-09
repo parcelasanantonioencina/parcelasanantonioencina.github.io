@@ -8,7 +8,9 @@ interface Parcel {
   id: number
   coordinates: [number, number][]
   status: "available" | "sold"
+  discount?: number
   surface: string
+  discountprice?: string
   price?: string
 }
 
@@ -101,7 +103,9 @@ const parcels: Parcel[] = [
       [-35.85728338681388, -71.51073172075738],
     ],
     status: "available",
+    discount: 30,
     surface: "5.000 m²",
+    discountprice: "$31.500.000",
     price: "$45.000.000",
   },
   {
@@ -114,6 +118,8 @@ const parcels: Parcel[] = [
       [-35.8583964866807, -71.51076342663893],
     ],
     status: "available",
+    discount: 30,
+    discountprice: "$31.500.000",
     surface: "5.187 m²",
     price: "$45.000.000",
   },
@@ -128,6 +134,8 @@ const parcels: Parcel[] = [
     status: "available",
     surface: "5.140 m²",
     price: "$45.000.000",
+    discount: 30,
+    discountprice: "$31.500.000",
   },
   {
     id: 5,
@@ -140,6 +148,8 @@ const parcels: Parcel[] = [
     status: "available",
     surface: "5.002 m²",
     price: "$45.000.000",
+    discount: 30,
+    discountprice: "$31.500.000",
   },
   {
     id: 6,
@@ -152,6 +162,8 @@ const parcels: Parcel[] = [
     status: "available",
     surface: "5.001 m²",
     price: "$45.000.000",
+    discount: 30,
+    discountprice: "$31.500.000",
   },
   {
     id: 7,
@@ -164,6 +176,8 @@ const parcels: Parcel[] = [
     status: "available",
     surface: "5.003 m²",
     price: "$45.000.000",
+    discount: 30,
+    discountprice: "$31.500.000",
   },
   {
     id: 8,
@@ -176,6 +190,8 @@ const parcels: Parcel[] = [
     status: "available",
     surface: "5.319 m²",
     price: "$45.000.000",
+    discount: 30,
+    discountprice: "$31.500.000",
   },
   {
     id: 9,
@@ -188,6 +204,8 @@ const parcels: Parcel[] = [
     status: "available",
     surface: "5.580 m²",
     price: "$45.000.000",
+    discount: 30,
+    discountprice: "$31.500.000",
   },
   {
     id: 10,
@@ -200,6 +218,8 @@ const parcels: Parcel[] = [
     status: "available",
     surface: "5.095 m²",
     price: "$45.000.000",
+    discount: 30,
+    discountprice: "$31.500.000",
   },
   {
     id: 11,
@@ -213,6 +233,8 @@ const parcels: Parcel[] = [
     status: "available",
     surface: "5.010 m²",
     price: "$45.000.000",
+    discount: 30,
+    discountprice: "$31.500.000",
   },
   {
     id: 12,
@@ -225,6 +247,8 @@ const parcels: Parcel[] = [
     status: "available",
     surface: "5.000 m²",
     price: "$45.000.000",
+    discount: 30,
+    discountprice: "$31.500.000",
   },
   {
     id: 13,
@@ -430,10 +454,19 @@ export function ParcellationSection() {
                 <p className="text-sm text-gray-600 mb-1">
                   <strong>Superficie:</strong> {selectedParcel.surface}
                 </p>
+                {selectedParcel.discount && (
+                <p className="text-sm text-gray-600 mb-1">
+                  <strong>Descuento:</strong> {selectedParcel.discount} %
+                </p>
+                )}
                 {selectedParcel.price && (
-                  <p className="text-sm text-gray-600 mb-2">
-                    <strong>Precio:</strong> {selectedParcel.price}
-                  </p>
+                        <p className="text-sm text-gray-600 mb-2">
+                          <strong>Precio:</strong>{" "}
+                          {selectedParcel.discountprice
+                            ? <span><s>{selectedParcel.price}</s> <span className="text-sm text-gray-600 mb-1">{selectedParcel.discountprice}</span></span>
+                            : <span>{selectedParcel.price}</span>
+                          }
+                        </p>
                 )}
                 <button onClick={() => setSelectedParcel(null)} className="text-xs text-gray-500 hover:text-gray-700">
                   Cerrar

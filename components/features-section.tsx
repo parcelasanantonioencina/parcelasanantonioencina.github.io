@@ -8,11 +8,11 @@ export function FeaturesSection() {
       title: "Aprobado por el SAG",
       description: "Todas nuestras parcelas cuentan con plano aprobado por el SAG",
     },
-    {
-      icon: <ListOrdered className="h-8 w-8" />,
-      title: "ROL propio",
-      description: "Todas nuestras parcelas cuentan con ROL propio lista para escriturar",
-    },
+    // {
+    //   icon: <ListOrdered className="h-8 w-8" />,
+    //   title: "ROL propio",
+    //   description: "Todas nuestras parcelas cuentan con ROL propio lista para escriturar",
+    // },
   ]
 
   return (
